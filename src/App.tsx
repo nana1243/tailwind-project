@@ -8,7 +8,7 @@ function App() {
         </h1>
         <div className="flex flex-col item-center justify-center-min-h-screen">
             <button className="button">Click Me! </button>
-            <button className="btns">Click Me! </button>
+            <button className="btns bg-rose-500">Click Me! </button>
         </div>
     </>
   )
