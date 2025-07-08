@@ -1,8 +1,56 @@
 @import "tailwindcss";
 
 
-@layer components {
-  .btns {
-    @apply bg-green-300 text-white py-3 px-5 rounded border-none;
-  }
+.body{
+  @apply bg-[#1f1f1f] flex justify-center items-center h-[100vh];
 }
+
+.btns {
+  @apply bg-green-300 text-white py-3 px-5 rounded border-none;
+}
+
+.calculator {
+    @apply size-282 border border-solid border-[#333] bg-[#ccc] p-[4px];
+}
+
+.calculator form {
+    @apply grid grid-cols-[repeat(4,65px)] auto-rows-[65px] gap-4;
+}
+
+.calculator form input {
+    @apply border-[2px] border-solid border-[#333] cursor-pointer text-[18px];
+}
+
+.calculator form input:hover {
+    @apply shadow-[1px_1px_2px_#333];
+}
+
+
+.calculator form .clear{
+    @apply bg-red-500;
+}
+
+.calculator form .operator{
+    @apply bg-orange-500;
+}
+.calculator form .dot{
+    @apply bg-green-500;
+}
+
+.calculator font input[type="text"] {
+  @apply col-span-4 text-right px-[10px];
+}
+
+.calculator form .clear {
+  @apply col-span-3;
+}
+
+.calculator form .result {
+  @apply col-span-2;
+}
+
+
+/*@layer components {*/
+
+/*}*/
+
