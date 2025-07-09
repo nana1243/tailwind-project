@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import {twMerge} from "tailwind-merge";
+import fruit from './assets/images/fruit.jpg';
+
 
 function App() {
   const isRed = false;
@@ -13,6 +15,8 @@ function App() {
             <button className="button">Click Me! </button>
             <button className={twMerge(`btns`,  isRed && `bg-rose-500`)}>Click Me! </button>
         </div>
+        <img src="/fruit.jpg"/>
+        <img src={fruit}/>
     </>
   )
 }
