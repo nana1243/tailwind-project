@@ -10,3 +10,20 @@
 .button:hover {
     background-color: oklch(0.627 0.914 149.214 hue);
 }
+/*
+public 폴더일때 경로는 절대 경로로
+*/
+.bg-public{
+    background-image : url("/fruit.jpg");
+    width: 400px;
+    height: 400px;
+}
+
+/*
+/assets 폴더일때 경로는 상대 경로로 (global.css )
+*/
+.bg-assets{
+    background-image: url("../assets/images/fruit.jpg");
+    width: 400px;
+    height: 400px;
+}
