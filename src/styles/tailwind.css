@@ -4,6 +4,14 @@
     @apply bg-[#1f1f1f] flex justify-center items-center h-[100vh];
 }
 
+.bg-public-tail {
+    @apply bg-[url('/fruit.jpg')] w-[600px] h-[600px];
+}
+
+.bg-assets-tail{
+    @apply bg-[url('../assets/images/fruit.jpg')] w-[600px] h-[600px];
+}
+
 
 @layer components {
     .calculator {
